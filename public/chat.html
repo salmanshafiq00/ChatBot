@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>SFS ChatBot</title>
+</head>
+<body>
+<h1>Welcome to ChatBot!</h1>
+
+<main class="chat-main">
+    <div class="chat-sidebar">
+      <h3> Room Name:</h3>
+      <h4 id="roomName"></h4>
+
+      <h3> Users</h3>
+      <ul id="users"></ul>
+    </div>
+
+    <div class="messageContainer"></div>
+  </main>
+
+
+  <div class="chatFormContainer">
+    <div class="fileicon-box">
+        <label for="imageFile"><img src="imageIcon.png" id="imageIcon" alt="image-icon"> </label>
+        <input type="file" id="imageFile" class="sendFile" style="display: none"/>
+    </div>
+    <div class="textBtnContainer">
+        <form id="chatForm">
+            <input type="text" name="" id="msg" placeholder="Enter Message.." required autocomplete = "off">
+            <button class="btn">Send</button>
+        </form>
+
+    </div>
+    
+</div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/qs/6.10.2/qs.min.js"></script>
+<script src="/socket.io/socket.io.js"></script>
+    <script src="default.js"></script>
+</body>
+</html>
